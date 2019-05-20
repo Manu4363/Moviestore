@@ -1,0 +1,12 @@
+<h2>Chercher des réalisateurs</h2>
+<form action="/directors" method="GET">
+    <label for="name"></label>
+    <input type="text" name="name" value="<%= searchOptions.name %>">
+    <button type="submit">Chercher</button>
+</form>
+<br>
+<% directors.forEach(director =>  { %>
+    <div>
+    <%= director.name %>
+    </div>
+<% }) %>
